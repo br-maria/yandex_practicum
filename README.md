@@ -75,6 +75,7 @@ Project_template
 
 Задание 3. Разработка ER-диаграммы
 Добавьте сюда ER-диаграмму. Она должна отражать ключевые сущности системы, их атрибуты и тип связей между ними.
+[ER-диаграмма](https://editor.plantuml.com/uml/hPH1RzCm68RlaV8Vh9usf4bbKZdqD8c1XE2013rDg3B9HsgQsC5sEgeDgUiGbqtQZSCka-0Fb8s9ZjBz1liVyTdDjcQK2g7baiJVw-Xvtxp9Xj9KwY9Bmq1r6S-ff1b96GVTpu48gJjYVfBJg4iJUA7xAH09aQOyII4CmW2uPhfFQkR4N9g9FJG_y7ngHdPepjrzZL15MWeasGa3WiSz5fCcQRMUR9AjvqzVpHOXeop5vHwLKOVAbVL6OvLi5PozAw2Kv5IfRI7ZTeUgJaNwO7McY2HG3N6RQXp7UAbP1hDHaSUBHXyg3hxQFJkq0-I_S5VeujBJRqAFHR2KdzCCvfZkr-ibau_pPj2uMiVuTQ7cRTJloCKnya_jHpCsPtOVtOpi9pEsHzx9Gy7ViAIGL3F1bngAlUVstEZnrKY1remd3lwj4lprRBK7Khc7DWdZ6XAGIzrKaRyWya-iozH3lXHTM0vNO9qMecc_jLgZic3lSoP1BKhrdn0_-oodPcGcnEuXxpTxW1KPcmlF_AY7ocSY-TzCmUrl_wqi24MhQJj4h52M_udilxNTtRKriLD6sKJ-iVc50P_ROQsgABlj9ATcWlQ-NylAKIciLkVs8wlQwpISxCozM9GDi8K3krzk28CDu37-Vtu3)
 
 Задание 4. Создание и документирование API
 1. Тип API
@@ -86,7 +87,7 @@ REST API
 Один из самых популярных форматов, много, где используется - не будет сложностей с разработкой и интеграциями
 2. Документация API
 Здесь приложите ссылки на документацию API для микросервисов, которые вы спроектировали в первой части проектной работы. Для документирования используйте Swagger/OpenAPI или AsyncAPI.
-https://editor.swagger.io/?_gl=1*9414n*_gcl_au*MjEzNzYyNDgwMy4xNzU0NDEzODgy
+[Документация API](https://editor.swagger.io/?_gl=1*9414n*_gcl_au*MjEzNzYyNDgwMy4xNzU0NDEzODgy)
 Задание 5. Работа с docker и docker-compose
 Перейдите в apps.
 
