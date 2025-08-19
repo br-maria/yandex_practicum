@@ -88,6 +88,7 @@ REST API
 2. Документация API
 Здесь приложите ссылки на документацию API для микросервисов, которые вы спроектировали в первой части проектной работы. Для документирования используйте Swagger/OpenAPI или AsyncAPI.
 [Документация API](https://editor.swagger.io/?_gl=1*9414n*_gcl_au*MjEzNzYyNDgwMy4xNzU0NDEzODgy)
+
 Задание 5. Работа с docker и docker-compose
 Перейдите в apps.
 
