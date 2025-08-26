@@ -1,15 +1,23 @@
--- Создание таблицы сенсоров
+-- Create the database if it doesn't exist
+CREATE DATABASE smarthome;
+
+-- Connect to the database
+\c smarthome;
+
+-- Create the sensors table
 CREATE TABLE IF NOT EXISTS sensors (
     id SERIAL PRIMARY KEY,
-    sensor_id VARCHAR(255) NOT NULL UNIQUE,
-    location VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    name VARCHAR(100) NOT NULL,
+    type VARCHAR(50) NOT NULL,
+    location VARCHAR(100) NOT NULL,
+    value FLOAT DEFAULT 0,
+    unit VARCHAR(20),
+    status VARCHAR(20) NOT NULL DEFAULT 'inactive',
+    last_updated TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
 );
 
--- Вставка начальных данных
-INSERT INTO sensors (sensor_id, location)
-VALUES
-('1', 'Living Room'),
-('2', 'Bedroom'),
-('3', 'Kitchen')
-ON CONFLICT DO NOTHING;
+-- Create indexes for common queries
+CREATE INDEX IF NOT EXISTS idx_sensors_type ON sensors(type);
+CREATE INDEX IF NOT EXISTS idx_sensors_location ON sensors(location);
+CREATE INDEX IF NOT EXISTS idx_sensors_status ON sensors(status);
