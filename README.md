@@ -5,13 +5,13 @@ Project_template
 Чтобы составить документ с описанием текущей архитектуры приложения, можно часть информации взять из описания компании и условия задания. Это нормально.
 
 1. Описание функциональности монолитного приложения
-Управление отоплением:
+Управление устройствами:
 
 Пользователи могут управлять отоплением: увеличивать или уменьшать температуру
 Система поддерживает управление от сервера к датчику
 Система поддерживает синхронное взаимодействие
 Система не поддерживает асинхронные вызовы, реактивное взаимодействие
-Мониторинг температуры:
+телеметрия:
 
 Пользователи могут получать данные о температуре
 Система поддерживает получение запроса от сервера к датчику
@@ -34,10 +34,10 @@ Project_template
 Управление заявками
 Контроль работы сервисных бригад
 
-Управление отоплением 
+Управление устройствами 
 Контекст: централизованное управление системами отопления
 Границы:
-Мониторинг температуры в реальном времени
+телеметрия
 Настройка температуры
 
 
@@ -58,7 +58,7 @@ Project_template
 Задание 2. Проектирование микросервисной архитектуры
 В этом задании вам нужно предоставить только диаграммы в модели C4. Мы не просим вас отдельно описывать получившиеся микросервисы и то, как вы определили взаимодействия между компонентами To-Be системы. Если вы правильно подготовите диаграммы C4, они и так это покажут.
 
-[Диаграмма контейнеров (Containers)](https://editor.plantuml.com/uml/dLNBRjD05DtxAuPiIAKcaL1Nh1g2G4W5GYlMbHCFhP5ZH_QOga98wOk2WbfH8RL22CI2VTBMrEd3_OMPF-BSoOCyd0gQHU8PttFkENFldSm7mlH5M7ECEnP_PRkSbUPAdYjCFFfiLOXwSBzGyCsr_8ejLiDA672_YlVS5VcgLolK7TCbU2uGbcDN2gMvN9csNZvTADJCG70VMyi3ndnTfxBTgXDQFFITuNI6SPV90tab8_K1tx6CcDfGM-eZ5WcUDcLibBaVU6ws6WR2gt5_bcNa3vd82_L9dk7tMBOG5j4wG---o5W3M_9AlGTZ0YgGCRKbhrK3syS8tKV2JMnH93OJsT4OSCbB6MTcjAwlXDNS7QsmePfGrwEFvALg6alhy5jRVk25hcNwwzb0hxL4qCRo0XI_4QkjPMROMuFXCx2VNUELOhrEyGU8QkUqn74ONYzoiogqlQEk98ZP9c5gOyHO5wFsuM0qaLctWIwMdn39Cy_Y-TU1vliksnhSfcDKJNq4T3OusvRcfJ8q9_XgNiLsU4_xDyXjasoK14UD8axpySW91HeaCu52vWx3uZRc7bQobYdCYXbmulsCQ8XdyfHwWAZL3YKiUu5OyVdIYmMT_fUc9SBDRk9jM6sW_2rg6xN7q3Fo6XfFvJaqxgbTdL_JfNQEsfa54LuYFj5yiJn1OAF7k0yPuyT8S-LxpXBttzXLhVudsGTTFCqyWXvx_r4w1bohw-G2QdRxvIZWwmnsQHdrPu_w-bpFttGZiZFPNQ5OdUA1r8CsqVrmrcE8IV_p8b3tRdQI0gRAn0mxaJpfpkBWXFVwDiTk1kebQ7wdfnft1r72MppI8iOYTuOkcR-JUOIP7z2Y95hOALqYz9DwsK1PabgzcwuSoj_FsXtNVnzEmWwDv6tW6ZCyHuUZNNJEY0VGQ7IoXj2JtNoOqeaJRJTCCTP9QVZKdW37F7Sj-glv0m00)
+[Диаграмма контейнеров (Containers)](dLPDRzj64BthLsnrgGFO9b3ar5CSzmCjujQ9qtD0IbkRBKKgv3A1KHHmxBXfeI96WW89YY96KVGkEr9Couhy5tR_KT-CI8aILqPgmv2ut9qtRpxUh6uboerLsWfg7pNbztuenVhDzIXKBXvZiQDKE_dKSMBtyUgshtPIBqratC2-3DLg8sevxS0DoNmbKSt0zvprcokRzEgxZJjEoqsKZF7gmGHnjSsk_B0Hf4sPna7PNQtsiT0lzNlTDx_YCzDzOPwO0_CR5YCyxUkijYdZ90gN6ccYefQCbqLT7-kHlZ2_wpDyd-ekZlLfNQUzFtJ6Xbtztlm2n16W02RCWRuqUtXzYgD7SBYFLtGIBqVwd6s0fOSwgz-eJHWkDUKZlo49-P_AwH5v_3AgBzWbdqDohjzYeNju6Eekq2dgFuaPCp_d-FTC1x7dvFjwQ3grhLrai_NWTfI6JJVUNKfupGc0eqnV0E8TpdBYwZV4JpM1lodrnz9RQxVf_4kSEbdX1CoROVkUT1kAWtWzfWGoJucOUJAJjh6DEK84iuxSjW_hjSsl2EIRg2bNVqWOxuq-OUCJAfBfS88fywXSbt6fo9qANYlo_43ctFy2tHEYZO9JBljYKHnV1Ab2-zKhLl1yBh2uJd2VUKjDLxcUct0JlC1faATgTgcpJCSSaiFDA57RiTowUuVT_ykm1BW_TlmKeUvH-QafpND13N49ZZqz0CVdvXdxPpXhNvh3PG1X4-T7Z9VfjpYuboCUWSPy6acrSHHioRXeuRyfVC1bYuAVzlE7bKx0hZkEv09idXNbSF1nXd1fsI-KJNqzO7Kl3aIVLxihLJiBOY3sW1rnFvpb21dn_tODLfzS7Od5c2gJ2RpfGxDPNeR9pgLjxb0lLJlueLAtu-X7dbSRT-_V5_e55tH0x8dMvut0RoTIR4J9mzHNwkgiOpACgAEHkxnKw23h21FuP_xl41KA8Dgf5_Z9ZfEaNjA8VKzMo2ePo9PKyUwYJYdY718NJXVd-6ltaUjijMC_tAwFRLXp700dE1FCsPhyYNvuvbi2MHRciAoYgVC1Z-YVQOeUKnOuhTcC96ltP52wCgQJy3KoEIaZ991pkQ24zknN1qzlcrgkka38V-5rF1u_V1YIRMa4NiUSRSfpwzMiQWU2S63Qdvra9Ulgz7XbKNv5vcM8EUNQxAqQp37c6So8Ih-1tVoDpZDboF7qw3wrraVGc6A9d0cIPf7n4derzkF9X2i4IOq2y8DnCAUe2FTLaGbgg18RYnERx8vpPZshJ6mw7EDMiSh5Xp0BBHM9cb4Jpxmye5m36Ktg1NMm4I_LbeeweCpWExz-QToNF5eAOydFz9TN9IlpPVuVsdJcBwknykSbK3YVxRbv8jVeWjej6JRf9_5)
 
 
 [Диаграмма компонентов (Components)](https://editor.plantuml.com/uml/fLTDRzj64BqBq7zWTQa3r1PGvDHJ705DKwIjQZleCQ2aZQsM8WLo6SCe0iYAawPm0wT1Ja4GDmqAz5OvCHjQjkI_iFkF-cQNf2c6Axc80KicT-RDnzjzixuMSDldOS-fLZxfiBjTbrcDgmslr_TSvd9hY_D-y4MzxjlRAvjTlXMsme3vRS_bM5rfUxrwtx5TybyEUCVfjkgDgyjDUdNxcrlrdXrmvkFLdGnnfQzZTTss4tPOw3lvUDLAjVAf9Pw9YOZaOtp68hBahdmWVyN357yDHLojD9aVUEvIEmoursF-PrPD78gfE9M_YVVuVYj6i8lekKPhpqMiF4TY8Xy1SWeie5doWJYN0xn-2zC3H1pY5LdYvLISA1zWYJCHrwuagRt0ofauLnWHy8Potu9H98wM5LWiJh7sBwqXwa6rihw37lJkNFT2jsFxEqk1UbOf5yr5LBjY_LojMFXfeCKssF2NjbbhjTydXsU6CF33yXgps_m2G8CaVIMGspVdz4dkYZ60JYnyJEYb7CWzBA496RO5avBYZwbvCxrCYwUcbQQo6l8jIkOfsZtKIB3VG-mnKdgaV6dzJH5JxGOajujF6ANCb0VfTu6nshn9UP-IByMfwKQ-1seCzodIZpAgDRuECI1MrKOuIqFSrrz5WdfUg-kmXAENS3WYUj1Zx340clZwqWavJeU9COtwCQGb0IpvH8nL6oT4LsofGeyf6IAml7z9JH_3qn39ZjNZoCnJsZiJLLzjR3GjnHP5807ONy26dMAH-xTUXwty69Xw3DiRDcVRzauIFddIcqG-LDi3-TF-HZdo5wgxl110hNaXrsBq4Yu3-HY_rBUOyizrwvKuKjqw0kAG46SA98gD8QXCttCS7OQqQ9AerIcr7W7tLOZVLL0IqTrbjVFUQSwCmElClzTjC_9zdMp-M3Nx4iS5xqQag78_pxE1dexDxPOTC9tbY91p0F8X1Mnw0T_qsVhtjqp4THXbks6t70NqvaFHLed_fRUzEdqnHaXKek_bBS64kzlTp0BeJjF6VmU4WQOJjPO7KLic3HE9SNa86gHPWD8JRWvmNceEPXPqlwttJpdRvHeEenlUV1uQt7UCCc0Qg8QJe4SCbNiyZvbv8HN61smbquAS_iX2ZjJ-pTDrGccOzOhTm-VrC22Olqbs5GHfFZOl7VKJGs45emKQ1jqrS4IrAYqQNEYABkixKklFZLA7nORdAxn_n37LkX3BMYmTtFk9kRbK_qn5Fv6ECdw-_c73V29oMFFEH952BPvxQl0U56JeVd9rErJsb5yy8pdLoXfpSfV9xAxq2kR52s9-W-fPDEkS7zkNyzS8wOLbPYGPfX_PvmRdPLoqKs62pEh-l9cHE6VM1Vrzhg_cf1yeS6OWb7aNnFL_Ui_evW9VK-QfVBp8as7Ggh8SygVfK3deow8wwHSNdsIKQ_zyvBoClBuG1dMFBXjGAduMitZeBdlzgbQkCRUZ_l_w3m00)
@@ -80,14 +80,148 @@ Project_template
 Задание 4. Создание и документирование API
 1. Тип API
 Укажите, какой тип API вы будете использовать для взаимодействия микросервисов. Объясните своё решение.
-REST API
+REST API 
 Плюсы:
 Гибкость и масштабируемость
 Кэширование данных на уровне HTTP
 Один из самых популярных форматов, много, где используется - не будет сложностей с разработкой и интеграциями
-2. Документация API
+AsyncAPI
+Параллельная обработка запросов
+Поддержка различных протоколов: MQTT
+
+3. Документация API
 Здесь приложите ссылки на документацию API для микросервисов, которые вы спроектировали в первой части проектной работы. Для документирования используйте Swagger/OpenAPI или AsyncAPI.
-[Документация API](https://editor.swagger.io/?_gl=1*9414n*_gcl_au*MjEzNzYyNDgwMy4xNzU0NDEzODgy)
+[Документация API](https://editor.swagger.io/?_gl=1*9414n*_gcl_au*MjEzNzYyNDgwMy4xNzU0NDEzODgy) - у меня открывается корректно, на всякий случай прикладываю код yaml
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Умный дом API
+  description: API для управления устройствами и температурой в умном доме
+
+host: smart-home.api.com
+basePath: /api/v1
+
+schemes:
+  - http
+  - https
+
+paths:
+  /devices:
+    get:
+      summary: Получение списка всех устройств
+      description: Возвращает список всех устройств в системе
+      responses:
+        '200':
+          description: Успешный ответ
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Device'
+
+    post:
+      summary: Добавление нового устройства
+      description: Добавляет новое устройство в систему
+      parameters:
+        - in: body
+          name: device
+          description: Данные нового устройства
+          required: true
+          schema:
+            $ref: '#/definitions/Device'
+      responses:
+        '201':
+          description: Устройство успешно добавлено
+
+  /devices/{deviceId}:
+    get:
+      summary: Получение информации об устройстве
+      parameters:
+        - name: deviceId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Успешный ответ
+          schema:
+            $ref: '#/definitions/Device'
+
+    put:
+      summary: Обновление информации об устройстве
+      parameters:
+        - name: deviceId
+          in: path
+          required: true
+          type: string
+        - in: body
+          name: device
+          description: Обновленные данные устройства
+          required: true
+          schema:
+            $ref: '#/definitions/Device'
+      responses:
+        '200':
+          description: Устройство успешно обновлено
+
+  /temperature:
+    get:
+      summary: Получение текущей температуры
+      responses:
+        '200':
+          description: Успешный ответ
+          schema:
+            $ref: '#/definitions/Temperature'
+
+    put:
+      summary: Установка новой температуры
+      parameters:
+        - in: body
+          name: temperature
+          description: Новая температура
+          required: true
+          schema:
+            $ref: '#/definitions/Temperature'
+      responses:
+        '200':
+          description: Температура успешно установлена
+
+definitions:
+  Device:
+    type: object
+    properties:
+      id:
+        type: string
+        description: Уникальный идентификатор устройства
+      name:
+        type: string
+        description: Название устройства
+      type:
+        type: string
+        description: Тип устройства (термостат, свет, розетка и т.д.)
+      status:
+        type: boolean
+        description: Статус устройства (включено/выключено)
+
+  Temperature:
+    type: object
+    properties:
+      current:
+        type: number
+        format: float
+        description: Текущая температура
+      target:
+        type: number
+        format: float
+        description: Целевая температура
+      min:
+        type: number
+        format: float
+        description: Минимальная допустимая температура
+      max:
+        type: number
+        format: float
+        description: Максимальная допустимая температура
+
 
 Задание 5. Работа с docker и docker-compose
 Перейдите в apps.
