@@ -1,7 +1,0 @@
-com/example/temperatureapi/model/TemperatureResponse.class
-com/example/temperatureapi/model/Sensor.class
-com/example/temperatureapi/controller/HealthController.class
-com/example/temperatureapi/repository/SensorRepository.class
-com/example/temperatureapi/TemperatureApiApplication.class
-com/example/temperatureapi/controller/SensorController.class
-com/example/temperatureapi/controller/TemperatureController.class
