@@ -1,0 +1,7 @@
+/Users/maria/Downloads/temperature-api-full-docker/src/main/java/com/example/temperatureapi/controller/TemperatureController.java
+/Users/maria/Downloads/temperature-api-full-docker/src/main/java/com/example/temperatureapi/controller/HealthController.java
+/Users/maria/Downloads/temperature-api-full-docker/src/main/java/com/example/temperatureapi/model/TemperatureResponse.java
+/Users/maria/Downloads/temperature-api-full-docker/src/main/java/com/example/temperatureapi/model/Sensor.java
+/Users/maria/Downloads/temperature-api-full-docker/src/main/java/com/example/temperatureapi/repository/SensorRepository.java
+/Users/maria/Downloads/temperature-api-full-docker/src/main/java/com/example/temperatureapi/controller/SensorController.java
+/Users/maria/Downloads/temperature-api-full-docker/src/main/java/com/example/temperatureapi/TemperatureApiApplication.java
