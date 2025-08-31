@@ -97,14 +97,11 @@ info:
   version: '1.0.0'
   title: Умный дом API
   description: API для управления устройствами и температурой в умном доме
-
 host: smart-home.api.com
 basePath: /api/v1
-
 schemes:
   - http
   - https
-
 paths:
   /devices:
     get:
@@ -117,7 +114,6 @@ paths:
             type: array
             items:
               $ref: '#/definitions/Device'
-
     post:
       summary: Добавление нового устройства
       description: Добавляет новое устройство в систему
@@ -131,7 +127,6 @@ paths:
       responses:
         '201':
           description: Устройство успешно добавлено
-
   /devices/{deviceId}:
     get:
       summary: Получение информации об устройстве
@@ -145,7 +140,6 @@ paths:
           description: Успешный ответ
           schema:
             $ref: '#/definitions/Device'
-
     put:
       summary: Обновление информации об устройстве
       parameters:
@@ -162,7 +156,6 @@ paths:
       responses:
         '200':
           description: Устройство успешно обновлено
-
   /temperature:
     get:
       summary: Получение текущей температуры
@@ -171,7 +164,6 @@ paths:
           description: Успешный ответ
           schema:
             $ref: '#/definitions/Temperature'
-
     put:
       summary: Установка новой температуры
       parameters:
@@ -184,7 +176,6 @@ paths:
       responses:
         '200':
           description: Температура успешно установлена
-
 definitions:
   Device:
     type: object
